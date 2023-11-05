@@ -1,0 +1,3 @@
+function drawGameBoard(){
+    gameBoard = []
+}
