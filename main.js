@@ -28,9 +28,28 @@ boxElements.forEach(box => {
             let playerMarker = playerTurn()
             roundNumber++
             box.textContent = playerMarker
+            checkWinCondition()
         }else{
         return
     }
     }
 });
 
+function checkWinCondition(){
+    let box1 = document.querySelector("#box1").textContent;
+    let box2 = document.querySelector("#box2").textContent;
+    let box3 = document.querySelector("#box3").textContent;
+    let box4 = document.querySelector("#box4").textContent;
+    let box5 = document.querySelector("#box5").textContent;
+    let box6 = document.querySelector("#box6").textContent;
+    let box7 = document.querySelector("#box7").textContent;
+    let box8 = document.querySelector("#box8").textContent;
+    let box9 = document.querySelector("#box9").textContent;
+
+    if(box1 == box2 && box2 == box3){
+        console.log("row1 Winner")
+    }else if(box4 == box5 && box5 == box6){
+        console.log("row 2 winner")
+    }
+
+}
