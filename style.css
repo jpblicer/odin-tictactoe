@@ -3,10 +3,14 @@
     grid-template-columns: repeat(3, 1fr);
     height: 500px;
     width: 500px;
+    border: solid;
 }
 
 .box{
     border: solid;
     height: 100%;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
