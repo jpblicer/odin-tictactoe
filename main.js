@@ -46,10 +46,22 @@ function checkWinCondition(){
     let box8 = document.querySelector("#box8").textContent;
     let box9 = document.querySelector("#box9").textContent;
 
-    if(box1 == box2 && box2 == box3){
+    if(box1 === box2 && box2 === box3 && box1 != "" && box2 !="" && box3 !=""){
         console.log("row1 Winner")
-    }else if(box4 == box5 && box5 == box6){
+    }else if(box4 === box5 && box5 === box6 && box4 != "" && box5 !="" && box6 !=""){
         console.log("row 2 winner")
+    }else if(box7 === box8 && box8 === box9 && box7 != "" && box8 !="" && box9 !=""){
+        console.log("row 3 winner")
+    }else if(box1 === box4 && box4 === box7 && box1 != "" && box4 !="" && box7 !=""){
+        console.log("row d1 winner")
+    }else if(box2 === box5 && box5 === box8 && box2 != "" && box5 !="" && box8 !=""){
+        console.log("row d2 winner")
+    }else if(box3 === box6 && box6 === box9 && box3 != "" && box6 !="" && box9 !=""){
+        console.log("row d3 winner")
+    }else if(box1 === box5 && box5 === box9 && box1 != "" && box5 !="" && box9 !=""){
+        console.log("row s1 winner")
+    }else if(box3 === box5 && box5 === box7 && box3 != "" && box5 !="" && box7 !=""){
+        console.log("row s2 winner")
     }
 
 }
